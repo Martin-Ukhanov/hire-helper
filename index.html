@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire Helper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./menu.js" defer></script>
+  </head>
+  <body class="bg-white text-black" style="min-width: 300px">
+    <!-- Menu -->
+    <menu
+      class="w-full h-full fixed translate-x-full flex flex-col justify-center items-center gap-y-8 bg-white z-30 transition-transform"
+      style="min-width: 300px">
+      <button id="close-menu-btn" class="absolute top-4 right-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="w-14 h-14 fill-black">
+          <path
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+        </svg>
+      </button>
+      <nav class="flex flex-col items-center gap-y-4">
+        <a href="" class="text-black/70 hover:text-black transition-colors"
+          >CANDIDATES</a
+        >
+        <a href="" class="text-black/70 hover:text-black transition-colors"
+          >EMPLOYERS</a
+        >
+        <a href="" class="text-black/70 hover:text-black transition-colors"
+          >SERVICES</a
+        >
+        <a href="" class="text-black/70 hover:text-black transition-colors"
+          >ABOUT US</a
+        >
+        <a href="" class="text-black/70 hover:text-black transition-colors"
+          >CONTACT US</a
+        >
+      </nav>
+      <a
+        href=""
+        class="p-2 border-2 border-blue-600 hover:bg-blue-600 text-red-600 hover:text-white font-semibold transition-colors">
+        FIND A JOB
+      </a>
+    </menu>
+    <!-- Header -->
+    <header class="flex p-4 justify-between items-center">
+      <div class="flex items-center gap-x-4">
+        <a
+          href=""
+          class="p-2 border-8 border-red-600 text-red-600 text-5xl font-bold">
+          HH
+        </a>
+        <div class="hidden lg:block">
+          <h2 class="italic text-red-600 text-lg font-semibold">We're</h2>
+          <h1 class="text-red-600 text-3xl font-bold">HireHelper.</h1>
+        </div>
+      </div>
+      <div class="hidden lg:flex items-center gap-x-8">
+        <nav class="flex gap-x-4">
+          <a href="" class="text-black/70 hover:text-black transition-colors"
+            >CANDIDATES</a
+          >
+          <a href="" class="text-black/70 hover:text-black transition-colors"
+            >EMPLOYERS</a
+          >
+          <a href="" class="text-black/70 hover:text-black transition-colors"
+            >SERVICES</a
+          >
+          <a href="" class="text-black/70 hover:text-black transition-colors"
+            >ABOUT US</a
+          >
+          <a href="" class="text-black/70 hover:text-black transition-colors"
+            >CONTACT US</a
+          >
+        </nav>
+        <a
+          href=""
+          class="p-2 border-2 border-blue-600 hover:bg-blue-600 text-red-600 hover:text-white font-semibold transition-colors">
+          FIND A JOB
+        </a>
+      </div>
+      <button id="open-menu-btn" class="block lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="w-14 h-14 fill-black">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </button>
+    </header>
+    <!-- Hero -->
+    <section class="flex flex-col md:flex-row">
+      <div class="relative flex-1 flex justify-center items-center">
+        <img
+          src="./images/candidate.jpg"
+          alt="candidate"
+          class="w-full h-full object-cover"
+          style="height: 500px" />
+        <div class="w-full h-full absolute top-0 left-0 bg-red-600/80"></div>
+        <div
+          class="absolute flex flex-col items-center gap-y-8 text-center text-white">
+          <div class="w-4/5 flex flex-col gap-y-4">
+            <p class="text-xl italic">I'm a candidate</p>
+            <h2 class="text-4xl font-extrabold">LOOKING FOR A JOB</h2>
+            <p>
+              From resume building to interview etiquette, we set you up for
+              success.
+            </p>
+          </div>
+          <a
+            href=""
+            class="p-2 border-2 border-white hover:bg-white text-white hover:text-red-600/80 font-semibold transition-colors">
+            APPLY NOW
+          </a>
+        </div>
+      </div>
+      <div class="relative flex-1 flex justify-center items-center">
+        <img
+          src="./images/employer.jpg"
+          alt="employer"
+          class="w-full h-full object-cover"
+          style="height: 500px" />
+        <div class="w-full h-full absolute top-0 left-0 bg-blue-600/80"></div>
+        <div
+          class="absolute flex flex-col items-center gap-y-8 text-center text-white">
+          <div class="w-4/5 flex flex-col gap-y-4">
+            <p class="text-xl italic">I'm an employer</p>
+            <h2 class="text-4xl font-extrabold">MANAGING A WORKPLACE</h2>
+            <p>
+              Discover our range of services designed to keep business booming.
+            </p>
+          </div>
+          <a
+            href=""
+            class="p-2 border-2 border-white hover:bg-white text-white hover:text-blue-600/80 font-semibold transition-colors">
+            OUR SERVICES
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- About Us -->
+    <section class="py-16 flex justify-center bg-gray-300">
+      <div class="w-4/5 flex flex-col items-center gap-y-4 text-center">
+        <a
+          href=""
+          class="p-2 border-8 border-red-600 text-red-600 text-5xl font-bold">
+          HH
+        </a>
+        <h3 class="text-2xl font-bold">
+          We're raising the bar for workforce management.
+        </h3>
+        <p>
+          We believe that when the right people come together, creativity
+          thrives, opportunities appear, and business grows.
+        </p>
+        <a
+          href=""
+          class="p-2 border-2 border-black hover:bg-black text-black hover:text-gray-300 font-semibold transition-colors">
+          ABOUT US
+        </a>
+      </div>
+    </section>
+    <!-- Learn More -->
+    <section>
+      <div class="relative flex justify-center items-center">
+        <div class="h-16 w-full absolute top-0 left-0 bg-gray-300"></div>
+        <img
+          src="./images/people.jpg"
+          alt="people"
+          class="w-4/5 object-cover z-10"
+          style="height: 500px" />
+        <div class="w-2/3 p-8 absolute bg-red-600/80 text-white z-20">
+          <div>
+            <h2 class="text-4xl font-extrabold">WE KNOW PEOPLE</h2>
+            <p class="mt-2">
+              Positive energy can transform an organization, and it all starts
+              with the right people. (That's where we come in.)
+            </p>
+          </div>
+          <button
+            class="p-2 mt-8 border-2 border-white hover:bg-white text-white hover:text-red-600 font-semibold transition-colors">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section
+      class="py-16 flex flex-col justify-center items-center gap-y-16 text-center">
+      <div>
+        <h4 class="text-lg font-bold">SERVICES</h4>
+        <h3 class="text-3xl font-extrabold">MANAGE YOUR WORKFORCE</h3>
+      </div>
+      <div class="w-4/5 flex flex-col md:flex-row justify-center gap-8">
+        <div
+          class="w-full h-72 p-8 flex flex-col items-center justify-between bg-gray-300"
+          style="min-width: 220px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-24 h-24 fill-black stroke-gray-300">
+            <path
+              d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"></path>
+            <path d="M6 12h6v2H6zm0 4h6v2H6z"></path>
+          </svg>
+          <h5 class="text-xl font-bold">Professional Staffing</h5>
+          <a
+            href=""
+            class="p-2 border-2 border-black hover:bg-black text-black hover:text-gray-300 font-semibold transition-colors"
+            >MORE</a
+          >
+        </div>
+        <div
+          class="w-full h-72 p-8 flex flex-col items-center justify-between bg-gray-300"
+          style="min-width: 220px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-24 h-24 fill-black stroke-gray-300">
+            <path
+              d="M21 15a9.11 9.11 0 0 0-.18-1.81 8.53 8.53 0 0 0-.53-1.69 8.08 8.08 0 0 0-.83-1.5 8.73 8.73 0 0 0-1.1-1.33A8.27 8.27 0 0 0 17 7.54a8.08 8.08 0 0 0-1.53-.83L15 6.52V5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.52l-.5.19a8.08 8.08 0 0 0-1.5.83 8.27 8.27 0 0 0-1.33 1.1A8.27 8.27 0 0 0 4.54 10a8.08 8.08 0 0 0-.83 1.53 9 9 0 0 0-.53 1.69A9.11 9.11 0 0 0 3 15v3H2v2h20v-2h-1zM5 15a7.33 7.33 0 0 1 .14-1.41 6.64 6.64 0 0 1 .41-1.31 7.15 7.15 0 0 1 .64-1.19 7.15 7.15 0 0 1 1.9-1.9A7.33 7.33 0 0 1 9 8.68V15h2V6h2v9h2V8.68a8.13 8.13 0 0 1 .91.51 7.09 7.09 0 0 1 1 .86 6.44 6.44 0 0 1 .85 1 6 6 0 0 1 .65 1.19 7.13 7.13 0 0 1 .41 1.31A7.33 7.33 0 0 1 19 15v3H5z"></path>
+          </svg>
+          <h5 class="text-xl font-bold">Light Industrial Staffing</h5>
+          <a
+            href=""
+            class="p-2 border-2 border-black hover:bg-black text-black hover:text-gray-300 font-semibold transition-colors"
+            >MORE</a
+          >
+        </div>
+        <div
+          class="w-full h-72 p-8 flex flex-col items-center justify-between bg-gray-300"
+          style="min-width: 220px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-24 h-24 fill-black stroke-gray-300">
+            <path
+              d="M12 15c-1.84 0-2-.86-2-1H8c0 .92.66 2.55 3 2.92V18h2v-1.08c2-.34 3-1.63 3-2.92 0-1.12-.52-3-4-3-2 0-2-.63-2-1s.7-1 2-1 1.39.64 1.4 1h2A3 3 0 0 0 13 7.12V6h-2v1.09C9 7.42 8 8.71 8 10c0 1.12.52 3 4 3 2 0 2 .68 2 1s-.62 1-2 1z"></path>
+            <path
+              d="M5 2H2v2h2v17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4h2V2H5zm13 18H6V4h12z"></path>
+          </svg>
+          <h5 class="text-xl font-bold">Payroll Services</h5>
+          <a
+            href=""
+            class="p-2 border-2 border-black hover:bg-black text-black hover:text-gray-300 font-semibold transition-colors"
+            >MORE</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Call To Action -->
+    <section class="flex flex-col lg:flex-row text-center">
+      <a href="" class="p-8 flex-1 bg-red-600">
+        <p class="text-2xl">
+          <span class="italic">I'm ready to</span>
+          <span class="font-bold">LOOK FOR A JOB</span>
+        </p>
+      </a>
+      <a href="" class="p-8 flex-1 bg-blue-600">
+        <p class="text-2xl">
+          <span class="italic">Let's better</span>
+          <span class="font-bold">MANAGE MY WORKPLACE</span>
+        </p>
+      </a>
+    </section>
+    <!-- Footer -->
+    <footer class="flex flex-col items-center">
+      <div
+        class="w-4/5 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+        <h2 class="text-xl font-bold">HireHelper.</h2>
+        <p class="text-lg italic">Raising the bar for workforce management.</p>
+        <a
+          href=""
+          class="p-2 border-2 border-blue-600 hover:bg-blue-600 text-red-600 hover:text-white font-semibold transition-colors">
+          CLIENT LOGIN
+        </a>
+      </div>
+      <div
+        class="w-4/5 p-8 mb-8 flex flex-col lg:flex-row justify-between gap-8 bg-gray-300">
+        <div class="flex-1 flex flex-col sm:flex-row gap-8">
+          <div class="flex-1">
+            <h3 class="font-semibold">CANDIDATES</h3>
+            <nav class="mt-2 flex flex-col items-start gap-y-1">
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Find a job</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Apply for a job</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Events</a
+              >
+            </nav>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-semibold">EMPLOYERS</h3>
+            <nav class="mt-2 flex flex-col items-start gap-y-1">
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Professional staffing</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Light industrial staffing</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Payroll services</a
+              >
+            </nav>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-semibold">LOCATIONS</h3>
+            <nav class="mt-2 flex flex-col items-start gap-y-1">
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Waterloo, ON</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Toronto, ON</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Windsor, ON</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Ottawa, ON</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Montreal, QC</a
+              >
+              <a
+                href=""
+                class="text-black/70 hover:text-black transition-colors"
+                >Vancouver, BC</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3 class="font-semibold">NEWSLETTER</h3>
+            <form class="mt-2 flex flex-col gap-2">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="example@email.com"
+                required
+                class="p-2 focus:outline-none border-2 rounded-none border-black bg-white" />
+              <button
+                type="submit"
+                class="p-2 border-2 border-black hover:bg-black text-black hover:text-gray-300 font-semibold transition-colors">
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="mt-8">
+            <h3 class="font-semibold">FOLLOW US</h3>
+            <div class="mt-2 flex gap-x-2">
+              <a
+                href=""
+                class="p-2 border-2 border-black hover:bg-black fill-black hover:fill-gray-300 transition-colors">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6">
+                  <path
+                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                </svg>
+              </a>
+              <a
+                href=""
+                class="p-2 border-2 border-black hover:bg-black fill-black hover:fill-gray-300 transition-colors">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
+                </svg>
+              </a>
+              <a
+                href=""
+                class="p-2 border-2 border-black hover:bg-black fill-black hover:fill-gray-300 transition-colors">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6">
+                  <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                  <path
+                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
